@@ -1,5 +1,11 @@
-include("basics_plane.jl")
-include("utmb.jl")
+using OnlineSampling
+using PDMats
+using Distributions
+using LinearAlgebra
+using Pkg
+Pkg.activate("./visu/")
+using Plots
+using visu
 
 ground = ground_utmb
 M_speed = [20]
